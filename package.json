@@ -1,0 +1,31 @@
+{
+  "name": "clase-3",
+  "version": "1.0.0",
+  "description": "Expenses App - API",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
+  "author": "Eduardo Ledesma Higonet",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "4.18.2",
+    "mysql2": "3.6.3",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.1",
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
