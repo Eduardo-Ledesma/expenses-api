@@ -4,8 +4,14 @@ import { apiRouter } from './routes/index.js'
 
 const app = express()
 app.use(express.json())
-app.use(cors())
-app.disable('x-powered-by')
+
+const ACCEPTED_ORIGINS = [
+  process.env.FRONT_URL,
+  'http://localhost:5173'
+]
+app.use(cors({
+  origin: ACCEPTED_ORIGINS
+}))
 
 app.use('/api', apiRouter)
 app.use((req, res) => {
